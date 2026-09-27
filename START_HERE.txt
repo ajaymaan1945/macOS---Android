@@ -1,0 +1,27 @@
+MAAN — CLEAN REBUILD
+====================
+
+This is a fresh Mac-side build package. The old Swift build script is intentionally not used.
+
+Do this in order on the Mac:
+
+1. Open the Mac folder.
+2. Run setup_server.command (first time only).
+3. Run CHECK.command.
+4. Run build_maan.command.
+5. Run start_clean.command.
+
+If .command files are blocked, right-click -> Open -> Open.
+
+IMPORTANT
+---------
+Do NOT run the old command that directly compiled the old MAANNotifier/MAANMacApp.swift.
+This package uses Swift Package Manager and Package.swift explicitly links AppKit.
+
+The Swift source is now:
+Mac/Sources/MAAN/main.swift
+
+The built application is:
+Mac/MAAN.app
+
+If you already have an old Mann folder, keep it as a backup and use this new package in a new folder first.
